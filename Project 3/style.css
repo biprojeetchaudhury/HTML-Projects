@@ -1,0 +1,218 @@
+/* This is Global View aka Desktop View */
+
+body{
+    margin: 0px 0px;
+    font-family: 'Asap', sans-serif;
+    color: white;
+    background-color: #EBEBEB;
+} 
+
+
+.container{
+    
+    min-height: 300px;
+    
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 140px;
+}
+
+.header-container{
+    background-color: rgb(33, 33, 33);
+    min-height: 100px;
+    
+    position: fixed;
+    width: 100%;
+}
+
+header{
+    max-width: 1024px;
+    min-height: 100px;
+    /* background-color: aqua; */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+nav{
+    
+    padding: auto;
+    justify-content: space-between;
+}
+
+.navbutton a{
+    padding: 11px 25px;
+    border: 2px solid white;
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+}
+
+.logo span{
+    font-weight: bold;
+}
+
+h1{
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.col{
+    
+    background-color: rgb(36, 184, 132);
+    width: 30%;
+    margin-bottom: 40px;
+    box-sizing: border-box;
+    
+    
+    
+}
+
+.hide-d {
+    display: none;
+}
+
+.col img{
+    width: 100%;
+    height: auto;
+}
+
+.col p{
+    padding: 15px 25px;
+    line-height: 1.25rem;
+    color: white;
+}
+
+.col p::first-line{
+    font-weight: bold;
+}
+
+.mob-wrapper{
+    display: none;
+}
+
+.navbutton a:hover{
+    background-color: rgba(255, 0, 0, 0.489);
+}
+
+
+
+/* This is Tablet View */
+
+@media (max-width: 786px){
+
+    .col{
+        
+        width: 45%;
+        
+    }
+
+    .hide-d{
+        display: block;
+    }
+
+   
+
+    .navbutton a{
+        display: block;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    nav{
+        display: none;
+    }
+
+    .logo{
+        padding: 40px 0;
+        text-align: center;
+    }
+
+    .header-container{
+        
+        
+        position: fixed;
+        width: 100%;
+    }
+
+    .container{
+    
+        padding-top: 160px;
+    }
+
+    .mob-wrapper{
+        display: block;
+        padding-right: 20px;
+    }
+
+    .mybutton a {
+            text-decoration: none;
+            color: white;
+            display: block;
+            position: relative;
+            background-color: coral;
+            padding: 15px 30px;
+        }  
+        
+    .mybutton{
+        display: none;
+        position: absolute;
+        margin-left: -80px;
+        text-align: center;
+    }
+
+    .mybutton a:hover{
+        background-color: rgb(248, 161, 129);
+    }
+
+    
+
+}
+
+/* This is Mobile View */
+
+@media (max-width: 500px){
+
+    .col{
+        
+        width: 100%;
+       
+    }
+
+    .hide-m{
+        display: none;
+    }
+
+    
+
+    .navbutton a{
+        display: block;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .logo{
+        padding: 40px 0;
+        text-align: center;
+    }
+
+    .header-container{
+        
+        
+        position: relative;
+        width: 100%;
+    }
+
+    .container{
+    
+        padding-top: 40px;
+    }
+
+
+
+}
